@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="music.css" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="heading1">Music Player</h1>
+
+    <div id="Container">
+      <div id="All-song-div">
+        <label for="categoryFilter">Filter by Genre:</label>
+        <select id="categoryFilter">
+          <option value="">All</option>
+          <option value="Rock">Rock</option>
+          <option value="Pop">Pop</option>
+          <option value="Hip-Hop">Hip Hop</option>
+        </select>
+        <h1 id="heading2">All Songs</h1>
+        <ul id="songList"></ul>
+      </div>
+
+      <div id="Card-div">
+        <div id="img-container"></div>
+      </div>
+
+      <div id="Playlist-div"></div>
+    </div>
+
+    <script src="music.js"></script>
+  </body>
 </html>

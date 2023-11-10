@@ -1,0 +1,186 @@
+/* Default styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+#heading1 {
+    text-align: center;
+    color: #333;
+}
+
+#categoryFilter {
+    background-color: #757373;
+    padding: 5px;
+}
+
+#Container {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items with space in between */
+}
+
+#All-song-div,
+#Card-div,
+#Playlist-div {
+    background-color: rgb(163, 163, 248);
+    width: calc(32% - 20px);
+    /* Adjusted to three parts with some gap */
+    height: 600px;
+    padding: 20px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-right: 20px;
+    /* Added right margin for gap */
+}
+
+.btn1 {
+    background-color: rgb(0, 183, 255);
+    padding: 15px;
+    width: 150px;
+    /* Set a fixed width for the buttons */
+    margin-left: -20px;
+    display: block;
+    margin-top: 5px;
+    margin: 10 auto;
+}
+
+
+/* Media query for screens up to a certain width, e.g., 768px */
+@media (max-width: 768px) {
+    .btn1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Media query for screens up to a certain width, e.g., 480px */
+@media (max-width: 480px) {
+    .btn1 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+.btn1:hover {
+    background-color: blueviolet;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(26, 249, 10, 0.3);
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+    /* Center horizontally */
+    margin-top: 10px;
+    /* Optional top margin */
+
+    /* Set a maximum width */
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Media query for screens up to a certain width, e.g., 768px */
+@media (max-width: 768px) {
+    audio {
+        max-width: 100%;
+    }
+}
+
+/* Media query for screens up to a certain width, e.g., 480px */
+@media (max-width: 480px) {
+    audio {
+        max-width: 100%;
+    }
+}
+
+source {
+    /* Additional styles for the <source> element if needed */
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for screens up to a certain width, e.g., 768px */
+@media (max-width: 768px) {
+    source {
+        /* Adjust the styles for the <source> element as needed for smaller screens */
+    }
+}
+
+/* Media query for screens up to a certain width, e.g., 480px */
+@media (max-width: 480px) {
+    source {
+        /* Adjust the styles for the <source> element as needed for smaller screens */
+    }
+}
+
+
+
+/* Default styles for larger screens */
+button {
+    margin: 0 auto;
+    /* Center horizontally */
+    margin-top: 20px;
+    /* Add top margin */
+    display: block;
+    /* Make buttons block-level to center horizontally */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Media query for screens up to a certain width, e.g., 768px */
+@media (max-width: 768px) {
+    button {
+        margin-right: auto;
+        /* Decrease the margin for smaller screens */
+        margin-top: 20px;
+    }
+}
+
+/* Media query for screens up to a certain width, e.g., 480px */
+@media (max-width: 480px) {
+    button {
+        margin-right: auto;
+        /* Remove right margin for smaller screens */
+        margin-top: 20px;
+        width: 100%;
+        /* Make buttons full width on smaller screens */
+    }
+}
+
+
+
+/* Media query for screens up to a certain width, e.g., 768px */
+@media (max-width: 768px) {
+
+    #All-song-div,
+    #Card-div,
+    #Playlist-div {
+        width: 100%;
+        /* Adjusted to full width */
+        margin-right: 20px;
+        /* Remove right margin for smaller screens */
+    }
+}
+
+/* Media query for screens up to a certain width, e.g., 480px */
+@media (max-width: 480px) {
+
+    #All-song-div,
+    #Card-div,
+    #Playlist-div {
+        width: 100%;
+        /* Adjusted to full width */
+        margin-right: 0;
+        /* Remove right margin for smaller screens */
+    }
+}
